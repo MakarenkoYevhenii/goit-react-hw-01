@@ -1,0 +1,17 @@
+.statList{
+    display: flex;
+    justify-content: space-around
+}
+.statistics
+{
+    text-align: center;
+}
+.item
+{
+    /* background-color: black; */
+    width: 230px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

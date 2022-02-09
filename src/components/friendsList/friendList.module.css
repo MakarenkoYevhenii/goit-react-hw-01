@@ -1,0 +1,31 @@
+.friendsItem
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.Status{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.online{
+    background-color: rgb(6, 160, 13);
+}
+.offline{
+    background-color: rgb(255, 0, 0);
+}
+.avatar
+{
+    height: 30px;
+    width: 30px;
+}
+.friendsList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
