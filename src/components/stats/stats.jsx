@@ -1,4 +1,5 @@
 import styles from "./stats.module.css";
+import PropTypes from 'prop-types';
 
 export const Statistics = ({title,stats}) => {
     const plakat=stats.map(id =>{return(
@@ -24,3 +25,14 @@ export const Statistics = ({title,stats}) => {
     }
     return color;
         }}
+
+        Statistics.propTypes = {
+            title: PropTypes.string,
+            stats: PropTypes.arrayOf(
+              PropTypes.shape({
+                id: PropTypes.string.isRequired,
+                label: PropTypes.string.isRequired,
+                percentage: PropTypes.number.isRequired,
+              }),
+            ).isRequired,
+          };
