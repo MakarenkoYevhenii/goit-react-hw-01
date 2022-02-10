@@ -5,7 +5,7 @@
   text-align: center;
   border-collapse: collapse;
   /* border-spacing: 5px; */
-  background: #fffffa;
+  background: pink;
   /* border-radius: 20px; */
   margin: 0 auto;
 }
@@ -14,10 +14,10 @@ th {
   font-size: 22px;
   font-weight: 300;
   padding: 12px 10px;
-  border-bottom: 2px solid #aac8fa;
-  color: #aac8fa;
+  border-bottom: 2px solid red;
+  color: green;
 }
 td {
   padding: 10px;
-  color: #aac8fa;
+  color: purple;
 }

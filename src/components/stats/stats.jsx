@@ -1,16 +1,18 @@
 import styles from "./stats.module.css";
 import PropTypes from 'prop-types';
 
-export const Statistics = ({title,stats}) => {
+ const Statistics = ({title,stats}) => {
     const plakat=stats.map(id =>{return(
         <li className={styles.item} style={{ backgroundColor:getColor()}} key={id.id}>
         <span className="label">{id.label}</span>
         <span className="percentage">{id.percentage}%</span>
       </li>)
     })
+    console.log(title);
+
     return (
     <section className={styles.statistics}>
-    <h2 className="title">{title}</h2>
+        {title ? <h2 className="title">{title}</h2> : ""}
     <ul className={styles.statList}>
       {plakat}
     </ul>
@@ -36,3 +38,5 @@ export const Statistics = ({title,stats}) => {
               }),
             ).isRequired,
           };
+
+          export default Statistics

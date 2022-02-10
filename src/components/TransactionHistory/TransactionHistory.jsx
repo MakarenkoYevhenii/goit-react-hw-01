@@ -2,7 +2,7 @@ import styles from "./TransactionHistory.module.css";
 import PropTypes from 'prop-types';
 
 
-export const TransactionHistory = ({items}) => {
+ const TransactionHistory = ({items}) => {
     const transactionItem=items.map(id=>{
         return (
             <tr key={id.id}>
@@ -30,6 +30,9 @@ export const TransactionHistory = ({items}) => {
   </tbody>
 </table>)}
 
+TransactionHistory.defaultProps = {
+    items: []
+}
 
 TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(
@@ -41,3 +44,5 @@ TransactionHistory.propTypes = {
       }),
     ),
   };
+
+  export default TransactionHistory

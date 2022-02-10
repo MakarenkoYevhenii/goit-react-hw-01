@@ -4,7 +4,7 @@ import styles from "./profile.module.css";
 import PropTypes from 'prop-types';
 
 
-export const Profile = ({username,tag,location,avatar,stats}) => {
+ const Profile = ({username,tag,location,avatar,stats}) => {
     return (
         <div className={styles.profile}>
         <div className={styles.description}>
@@ -45,5 +45,7 @@ export const Profile = ({username,tag,location,avatar,stats}) => {
         followers:PropTypes.number.isRequired,
         views:PropTypes.number.isRequired,
         likes:PropTypes.number.isRequired,
-    })
+    }).isRequired,
   };
+
+  export default Profile
