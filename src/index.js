@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from 'components/App';
-import { Profile } from 'components/Profile/Profile';
-import  {Statistics}  from 'components/Stats/Stats';
-import  {FriendList}  from 'components/FriendsList/FriendsListItem';
-import {TransactionHistory} from "components/TransactionHistory/TransactionHistory";
-import user from "./components/Profile/user.json"
-import data from "./components/Stats/data.json"
-import friends from "./components/FriendsList/friends.json"
+// import { Profile } from 'components/Profile/Profile';
+// import  {Statistics}  from 'components/Stats/Stats';
+// import  {FriendList}  from 'components/FriendsList/FriendsListItem';
+// import {TransactionHistory} from "components/TransactionHistory/TransactionHistory";
+// import user from "./components/Profile/user.json"
+// import data from "./components/Stats/data.json"
+// import friends from "./components/FriendsList/friends.json"
 import './index.css';
 // import './components/friendsList/friendList.module.css';
 // import './components/Profile/profile.css';
-import transactions from "./components/TransactionHistory/transactions.json";
+
 
 
 
