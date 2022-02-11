@@ -1,5 +1,4 @@
-// import user from './user.json';
-// import user from 'path/to/user.json;
+
 import styles from "./profile.module.css";
 import PropTypes from 'prop-types';
 

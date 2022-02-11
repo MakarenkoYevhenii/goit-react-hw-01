@@ -1,7 +1,7 @@
 import styles from "./friendList.module.css";
 import PropTypes from 'prop-types';
 import FriendList from "./FriendsListItem";
-console.log(FriendList);
+
 
  function Friends({ friends }) {
     const element = friends.map(friend => {

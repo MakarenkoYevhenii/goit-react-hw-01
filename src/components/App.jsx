@@ -1,27 +1,19 @@
 import React from 'react';
-
-
 import  Profile  from './Profile/Profile'
 import  Statistics  from './Stats/Stats';
-import  FriendListItem  from './FriendsList/FriendList';
+import  FriendList  from './FriendsList/FriendList';
 import TransactionHistory from "./TransactionHistory/TransactionHistory";
-// import user from "./components/Profile/user.json"
-import user from "./Profile/user.json"
-// import data from "./components/stats/data.json"
-import data from "./Stats/data.json"
-import friends from "./FriendsList/friends.json"
+import user from "../data/user.json"
+import data from "../data/data.json"
+import friends from "../data/friends.json"
 
-// import './index.css';
-// import './components/friendsList/friendList.module.css';
-// import './components/Profile/profile.css';
-import transactions from "./TransactionHistory/transactions.json";
+import transactions from "../data/transactions.json";
 
 
 
-export const App = () => {
+ function App() {
   return(
-      <React.StrictMode>
-
+    <div className="app">
 <Profile
   username={user.username}
   tag={user.tag}
@@ -32,8 +24,10 @@ export const App = () => {
 <Statistics title="Upload stats" stats={data} />
 <Statistics stats={data} />
 
-<FriendListItem friends={friends} />;
+<FriendList friends={friends} />;
 <TransactionHistory items={transactions} />;
-</React.StrictMode>
+</div>
   )
 };
+
+export default App
