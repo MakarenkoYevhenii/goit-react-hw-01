@@ -8,8 +8,7 @@ import PropTypes from 'prop-types';
         <span className="percentage">{id.percentage}%</span>
       </li>)
     })
-    console.log(title);
-
+    
     return (
     <section className={styles.statistics}>
         {title ? <h2 className="title">{title}</h2> : ""}

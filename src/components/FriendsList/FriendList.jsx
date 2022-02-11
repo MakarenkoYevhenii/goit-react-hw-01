@@ -14,13 +14,13 @@ import FriendList from "./FriendsListItem";
             isOnline={isOnline}
             key={id}
           />
-      );
+      )
     })
       return (  
         <ul className={styles.friendsList}>
           {element}
         </ul>
-      );
+      )
     }
 
     Friends.defaultProps = {

@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
           </tr>
         )
     })
-    console.log(items);
     return (
 
 
